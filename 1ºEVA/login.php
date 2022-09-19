@@ -19,7 +19,7 @@
   if ($connect ->connect_error) {
     die("Connection failed: " . $conn ->connect_error);
   }
-   
+   echo "Conectada";
   // Consulta segura para evitar inyecciones SQL.
   $sql = sprintf("SELECT * FROM usuarios WHERE email=’%s’ AND password = ‘%s'”, mysql_real_escape_string($email), mysql_real_escape_string($password));
   $resultado = $connect->query($sql);
