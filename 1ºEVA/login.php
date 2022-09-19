@@ -6,22 +6,23 @@
   $password = $_POST['password'];
    
   // Datos para conectar a la base de datos.
+  
   $nombreServidor = "localhost";
   $nombreUsuario = "root";
   $passwordBaseDeDatos = "";
   $nombreBaseDeDatos = "diw";
   
   // Crear conexión con la base de datos.
-  $conn = new mysqli($nombreServidor, $nombreUsuario, $passwordBaseDeDatos, $nombreBaseDeDatos);
+  $connect = mysqli_connect($nombreServidor, $nombreUsuario, $passwordBaseDeDatos, $nombreBaseDeDatos);
    
   // Validar la conexión de base de datos.
-  if ($conn ->connect_error) {
+  if ($connect ->connect_error) {
     die("Connection failed: " . $conn ->connect_error);
   }
    
   // Consulta segura para evitar inyecciones SQL.
   $sql = sprintf("SELECT * FROM usuarios WHERE email=’%s’ AND password = ‘%s'”, mysql_real_escape_string($email), mysql_real_escape_string($password));
-  $resultado = $conn->query($sql);
+  $resultado = $connect->query($sql);
    
   // Verificando si el usuario existe en la base de datos.
   if($resultado){
