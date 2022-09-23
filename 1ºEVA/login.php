@@ -20,20 +20,9 @@
     die("Connection failed: " . $conn ->connect_error);
   }
    echo "Conectada";
-  // Consulta segura para evitar inyecciones SQL.
-  $sql = sprintf("SELECT * FROM usuarios WHERE email=’%s’ AND password = ‘%s'”, mysql_real_escape_string($email), mysql_real_escape_string($password));
-  $resultado = $connect->query($sql);
    
-  // Verificando si el usuario existe en la base de datos.
-  if($resultado){
-    // Guardo en la sesión el email del usuario.
-    $_SESSION['email'] = $email;
-     
-    // Redirecciono al usuario a la página principal del sitio.
-    header("HTTP/1.1 302 Moved Temporarily"); 
-    header("Location: principal.php"); 
-  }else{
-    echo 'El email o password es incorrecto, <a href="index.html">vuelva a intenarlo</a>.<br/>';
-  }
- 
-?>
+      
+     // Redirecciono al usuario a la página principal del sitio.
+     header("HTTP/1.1 302 Moved Temporarily"); 
+     header("Location: principal.php"); 
+   
