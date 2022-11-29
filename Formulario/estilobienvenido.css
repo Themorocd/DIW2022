@@ -1,0 +1,217 @@
+body {
+    margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      background: #34495e; /*#0984e3*/
+  }
+  *,::before,::after {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+  }
+  h1,h2,h3,h4 {
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: 500;
+  }
+  .box input[type = "text"],.box input[type = "apellido"]{
+      border: 0;
+      background: none;
+      display: block;
+      margin: 20px auto;
+      text-align: center;
+      border: 2px solid #3498db;
+      padding: 14px 10px;
+      width: 200px;
+      outline: none;
+      color: white;
+      border-radius: 24px;
+      transition: 0.25s;
+  }
+  .box input[type = "tel"]{
+      border: 0;
+      background: none;
+      display: block;
+      margin: 20px auto;
+      text-align: center;
+      border: 2px solid #3498db;
+      padding: 14px 10px;
+      width: 200px;
+      outline: none;
+      color: white;
+      border-radius: 24px;
+      transition: 0.25s;
+  }
+  
+  
+  .maxw {
+    max-width:65em;
+    margin: 0 auto;
+    padding: 0 1em;
+    display: flex;
+    background: #191919;
+  }
+  
+  h1 {
+   color: #fff;
+      text-transform: uppercase;
+      font-weight: 500;
+  }
+  header#cab > div {
+    justify-content: space-between;
+    align-items: center;
+    padding:1em;
+  }
+  header#cab nav a {
+    color:white;
+    fill:#ffffffcf;
+    padding: 0 .5em;
+  }
+  .cuerpo {
+    padding: 1em 1.5em;
+    width: 80%;
+    background: #191919;
+    box-shadow: 0 10px 25px #00000003;
+  }
+  .cuerpo p {
+      display:flex;
+  }
+  
+  /****BOTONES****/
+  .box input[type = "submit"]{
+      border: 0;
+      background: none;
+      display: block;
+      margin: 20px auto;
+      text-align: center;
+      border: 2px solid #2ecc71;
+      padding: 14px 40px;
+      outline: none;
+      color: white;
+      border-radius: 24px;
+      transition: 0.25s;
+      cursor: pointer;
+  }
+  
+  /***TABLAS***/
+  
+  .clear_r {
+    margin-top: 1em;
+    border-top: 1px solid #eaeaea;
+  }
+  .clear_r * {
+    float:right;
+  }
+  /*** FORMULARIOS ***/
+  
+  form label, form .label {
+      display: block;
+      padding: 0.2em 0;
+      font-size: 0.9em;
+      color: white;
+    
+  }
+  form .doble {
+      display: flex;
+      /* justify-content: space-between; */
+      width: 100%;
+  }
+  form .doble .campo:first-child {
+    margin-right:2em;
+  }
+  form span {
+      font-size: 0.9em;
+  }
+  input {
+      border-radius: 3px;
+      border: 1px solid #ebedf2;
+      background: #f7f9fd;
+      padding: .7em 1.1em;
+      margin-bottom:1em;
+  }
+  input:hover {
+      border-color: #aeaeae;
+  }
+  input:focus {
+    border-color: #1394c9;
+    outline: 0;
+    background: white;
+    box-shadow: 0 2px 10px #0000001c;
+  }
+  input:focus:invalid {
+    border-color:orange;
+  }
+  .formulario {
+      margin: 1em 0;
+      overflow: hidden;
+  }
+  .formulario h3 {
+    display:block;
+    border-bottom: 1.5px solid #2face0;
+    color: #1394c9;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+  }
+  .formulario .campos {
+    padding-top:1em;
+    display:flex;
+    align-items: flex-start;
+  }
+  .formulario aside {
+    padding-right:2em;
+  }
+  .formulario aside a {
+      cursor: pointer;
+      padding: 1em;
+      background: #ebebeb;
+      display:flex;
+      justify-content: center;
+      margin-bottom: 1em;
+      fill: #b4b6bb;
+      border: 1px solid #dfdfdf;
+      position:relative;
+      align-items: center;
+  }
+  .formulario aside a span {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    text-align: center;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: #00000057;
+    color: white;
+    transition: .2s ease;
+    font-weight: bold;
+    opacity: 0;
+  }
+  .formulario aside a:hover span {
+    opacity:1;
+  }
+  input#altura,input#peso {
+    width:6em;
+  }
+  input#email {
+      width: 120%;
+  }
+  .formulario .clear input {
+    float:right;
+  }
+  .formulario .slide {
+      display: flex;
+      width: 300%;
+      position: relative;
+      left:0;
+      transition: .5s ease;
+  }
+  .formulario .slide.step {
+    left: -100%;
+  }
+  .formulario .slide.step2 {
+    left: -200%;
+  }
+  .slide .item {
+      width: 100%;
+  }
+  
