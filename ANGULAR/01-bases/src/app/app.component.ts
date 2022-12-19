@@ -14,7 +14,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',//aqui es donde llamo al index
   template: `
-    <h2>Hello World</h2>
+    <h2>Hello word</h2>
     <p>This is my first component!</p>
   `
 })
